@@ -54,7 +54,7 @@ private:
     typedef std::list<std::pair<int, int>>::iterator Slot;
     int cap;
     std::unordered_map<int, Slot> map;
-    std::list<std::pair<int, int>> linkl;
+    std::list<std::pair<int, int>> linkl; // 这里其实没必要存pair，存个key再通过map取value就行了
 
     void hit(Slot slot)
     {
